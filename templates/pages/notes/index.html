@@ -1,0 +1,12 @@
+<div class="note-wrapper">
+  <a class="card-notes" ng-repeat="note in indexController.notes">
+    <div class="card" title="{{note.title}}">
+
+      <div ng-if="icon">
+        <i class="icon icon-cars {{note.icon}}"></i>
+      </div>
+
+      <h2 class="h3">{{note.title}}</h2>
+    </div>
+  </a>
+</div>
