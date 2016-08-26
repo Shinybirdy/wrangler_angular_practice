@@ -18,6 +18,8 @@
     </div>
     <div class="note-wrapper">
       <a class="card-notes" ng-repeat="note in notes" ng-href="#/notes/{{note.id}}">
+        <nw-card header = "{{note.title}}"></nw-card>
+        <!--^^sets note.title to a header var, which is used in nw-card.html  -->
       </a>
     </div>
 <script src="/js/vendor/jquery.js"></script>
