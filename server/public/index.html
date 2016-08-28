@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NoteWrangler">
+  <head>
+    <meta charset="utf-8">
+    <title>Note Wrangler</title>
+
+  </head>
+  <body>
+    <div class="nav-list">
+      <a href="#/notes"> Notes </a>
+      <a href="#users"> Users </a>
+    </div>
+
+    <div class="hero-wrapper">
+
+    </div>
+    <div class="main-wrapper">
+      <div ng-view></div>
+    </div>
+    <div class="note-wrapper">
+      <a class="card-notes" ng-repeat="note in notes" ng-href="#/notes/{{note.id}}">
+        <nw-card header = "{{note.title}}"></nw-card>
+        <!--^^sets note.title to a header var, which is used in nw-card.html  -->
+      </a>
+    </div>
+
+    <script src="vendors/angular-route.min.js"></script>
+    <!-- <script src="vendors/angular.js"></script>
+    <script src="../public/vendors/angular-route.js"></script>
+
+    <script src="/javascript/app.js"></script>
+    <script src="/javascript/routes.js"></script>
+  <!-SERVICES -->
+    <!-- <script src = "/javascript/services/note.js"></script> -->
+  </body>
+</html>
