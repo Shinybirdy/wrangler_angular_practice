@@ -31,7 +31,7 @@ var mongoose = require('mongoose');
 // app.use('/auth', auth);
 // // server angular app
  app.get('/', function(req, res){
-  res.sendFile(path.resolve('server/public/index.html'));
+  res.sendFile(path.resolve('server/public/views/index.html'));
  });
 // spin up server
 app.listen( process.env.PORT || 8080, function( req, res ){
